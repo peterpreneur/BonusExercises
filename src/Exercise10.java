@@ -10,18 +10,13 @@ public class Exercise10 {
 
         do {
             //Input
-            System.out.println("Enter a language: ");
-            String lang = scan.nextLine();
+            System.out.println("Enter your height in inches: ");
+            float height = scan.nextFloat();
 
-            switch (lang.toLowerCase()) {
-                case "english":
-                    System.out.println("Hello, World!");
-                    break;
-                case "spanish":
-                    System.out.println("Hola Mundo!");
-                    break;
-                case "dutch":
-                    System.out.println("Hallo wereld");
+            if(height <= 1.7){
+                System.out.println("Sorry, you can't ride the Raptor. You need 1.7 more inches");
+            }else {
+                System.out.println("Great, you can ride the Raptor!");
             }
 
             //Input
